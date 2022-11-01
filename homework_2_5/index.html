@@ -1,132 +1,63 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Адресная книга</title>
-    <link rel="stylesheet" href="style.css" type="text/css"> 
-    <link rel="stylesheet" href="reset.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Адресная Книга</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
-    <header class="common-header">
-        <h1>Адресная книга</h1>
+    <header class="header">
+        <h1 class="header__caption">Адресная книга</h1>
     </header>
-    <main>
-        <div class="layout">
-            <section class="sidebar">
-                <ul class="sidebar-ul"><b>Полезные ссылки</b>
-                    <li><a href="https://google.com" target="_blank" rel="nofollow noopener noreferrer">Поисковик Google</a></li>
-                    <li><a href="https://yandex.ru" target="_blank" rel="nofollow noopener noreferrer">Поисковик Yandex</a></li>
-                    <li><a href="https://mail.ru" target="_blank" rel="nofollow noopener noreferrer">Поисковик Mail.ru</a></li>
-                </ul>
-            </section>    
-            <section class="content">
-                <ul class="content-element__А"><h2>А</h2>
-                    <li>Алексеев</li>
-                    <li>Антонов</li>
-                    <li>Андронов</li>
-                    <li>Афонин</li>
-                    <li>Агафонов</li>
-                    <li>Алексеев</li>
-                    <li>Антонов</li>
-                    <li>Андронов</li>
-                    <li>Афонин</li>
-                    <li>Агафонов</li>
-                    <li>Алексеев</li>
-                    <li>Антонов</li>
-                    <li>Андронов</li>
-                    <li>Афонин</li>
-                    <li>Агафонов</li>
-                    <li>Алексеев</li>
-                    <li>Антонов</li>
-                    <li>Андронов</li>
-                    <li>Афонин</li>
-                    <li>Агафонов</li>
-                </ul> 
-                <ul class="content-element__Б"><h2>Б</h2>
-                    <li>Беляев</li>
-                    <li>Борисов</li>
-                    <li>Брамс</li>
-                    <li>Бродский</li>
-                    <li>Боголюбов</li>
-                    <li>Барабулька</li>
-                    <li>Барабанов</li>
-                    <li>Банин</li>
-                    <li>Булкин</li>
-                    <li>Беляев</li>
-                    <li>Борисов</li>
-                    <li>Брамс</li>
-                    <li>Бродский</li>
-                    <li>Боголюбов</li>
-                    <li>Барабулька</li>
-                    <li>Барабанов</li>
-                    <li>Банин</li>
-                    <li>Булкин</li>
-                    <li>Беляев</li>
-                    <li>Борисов</li>
-                    <li>Брамс</li>
-                    <li>Бродский</li>
-                    <li>Боголюбов</li>
-                    <li>Барабулька</li>
-                    <li>Барабанов</li>
-                    <li>Банин</li>
-                    <li>Булкин</li>
-                </ul>
-                <ul class="content-element__В"><h2>В</h2>
-                    <li>Васильев</li>
-                    <li>Васин</li>
-                    <li>Васев</li>
-                    <li>Вислоухов</li>
-                    <li>Вертопрахов</li>
-                    <li>Валуев</li>
-                    <li>Вискозин</li>
-                    <li>Валиулин</li>
-                    <li>Васильев</li>
-                    <li>Васин</li>
-                    <li>Васев</li>
-                    <li>Вислоухов</li>
-                    <li>Вертопрахов</li>
-                    <li>Валуев</li>
-                    <li>Вискозин</li>
-                    <li>Валиулин</li>
-                    <li>Васильев</li>
-                    <li>Васин</li>
-                    <li>Васев</li>
-                    <li>Вислоухов</li>
-                    <li>Вертопрахов</li>
-                    <li>Валуев</li>
-                    <li>Вискозин</li>
-                    <li>Валиулин</li>
-                    <li>Васильев</li>
-                    <li>Васин</li>
-                    <li>Васев</li>
-                    <li>Вислоухов</li>
-                    <li>Вертопрахов</li>
-                    <li>Валуев</li>
-                    <li>Вискозин</li>
-                    <li>Валиулин</li>
 
-                </ul>
-                <ul class="content-element__Г"><h2>Г</h2>
-                    <li>Гарпунов</li>
-                    <li>Горбунов</li>
-                    <li>Горностаев</li>
-                    <li>Галушка</li>
-                    <li>Гиппократ</li>
-                    <li>Галоген</li>
-                    <li>Гулин</li>
-                    <li>Герман</li>
-                    <li>Гюльчатай</li>
-                </ul>
-                <ul class="content-element__Д"><h2>Д</h2>
-                    <li>Денисов</li>
-                    <li>Демин</li>
-                    <li>Данилов</li>
-                    <li>Драчев</li>
-                    <li>Дулин</li>
-            </section>    
-            </div>       
+    <main class="main">
+        <div class="main__sidebar main__sidebar_quickurls">
+            <h4 class="main-sidebar__caption"> Полезные ссылки </h4>
+            <div class="main-block__cell main-block__cell_outer">
+                <a class="main-block__urls main-block__urls_outer" href="https://google.com" target="_blank" rel="nofollow noopener noreferrer">Поисковик Google</a>
+            </div>
+            <div class="main-block__cell main-block__cell_outer">
+                <a class="main-block__urls main-block__urls_outer" href="https://mail.ru" target="_blank" rel="nofollow noopener noreferrer">Поисковик Mail.ru</a>
+            </div>
+            <div class="main-block__cell main-block__cell_outer">
+                <a class="main-block__urls main-block__urls_outer" href="https://yandex.ru" target="_blank" rel="nofollow noopener noreferrer">Поисковик Yandex</a>
+            </div>
+        </div>
+        <div class="main__workspace">
+            <div class="main-workspace__caption">А</div>
+                <dt class="main-workspace__content-list">
+                    <dl class="main-workspace__content-item">Аллийский</dl>
+                    <dl class="main-workspace__content-item">Аляпцев</dl>
+                    <dl class="main-workspace__content-item">Аринов</dl>
+                    <dl class="main-workspace__content-item">Агонов</dl>
+                    <dl class="main-workspace__content-item">Анкратц</dl>
+                    </dt>
+            <div class="main-workspace__caption">Б</div>
+                <dt class="main-workspace__content-list">
+                    <dl class="main-workspace__content-item">Баллийский</dl>
+                    <dl class="main-workspace__content-item">Баляпцев</dl>
+                    <dl class="main-workspace__content-item">Баринов</dl>
+                    <dl class="main-workspace__content-item">Багонов</dl>
+                    <dl class="main-workspace__content-item">Банкратц</dl>
+                </dt>
+            <div class="main-workspace__caption" >В</div>
+                <dt class="main-workspace__content-list">
+                    <dl class="main-workspace__content-item">Валлийский</dl>
+                    <dl class="main-workspace__content-item">Валяпцев</dl>
+                    <dl class="main-workspace__content-item">Варинов</dl>
+                    <dl class="main-workspace__content-item">Вагонов</dl>
+                    <dl class="main-workspace__content-item">Ванкратц</dl>
+                </dt>
+            <div class="main-workspace__caption">Г</div>
+                <dt class="main-workspace__content-list">
+                    <dl class="main-workspace__content-item">Галлийский</dl>
+                    <dl class="main-workspace__content-item">Галяпцев</dl>
+                    <dl class="main-workspace__content-item">Гаринов</dl>
+                    <dl class="main-workspace__content-item">Гагонов</dl>
+                    <dl class="main-workspace__content-item">Ганкратц</dl>
+                </dt>
+            
         </div>
     </main>
 </body>
