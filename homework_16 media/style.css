@@ -3,15 +3,17 @@
 }
 
 body {
+    margin: 0;
     background: #1B2473;
     font-family: "Roboto", sans-serif;
 }
+
 
 .autorizationForm {
     position: relative;
     width: calc(600/1440 * 100vw);
     height: calc(412/1440 * 100vw);
-    border-radius: 20px;
+    border-radius: calc(20/1440 * 100vw);
     margin-left: calc(420/1440 * 100vw);
     margin-top: calc(160/1440 * 100vw);
 
@@ -28,9 +30,8 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 50px;
-    /* identical to box height, or 100% */
+    font-size: calc(60/1440 * 100vw);
+    line-height: calc(50/1440 * 100vw);
     color: #787878
 }
 
@@ -43,15 +44,14 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height, or 100% */
+    font-size: calc(16/1440 * 100vw);
+    line-height: calc(16/1440 * 100vw);
     color: #787878
 }
 
 .login {
     position: absolute;
-    border-radius: 10px;
+    /* border-radius: calc(10/1440*100vw); */
     width: calc(510/1440 * 100vw);
     height: calc(49/1440 * 100vw);
     margin-top: calc(110/1440 * 100vw);
@@ -64,10 +64,11 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: calc(28/1440 * 100vw);
-    line-height: 36px;
+    line-height: calc(36/1440 * 100vw);
     color: #787878
+
 }
- /* .enterData {
+/* .enterData {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -76,8 +77,8 @@ body {
     or 129% 
 
 
-     color: #787878
- } */
+    color: #787878
+} */
 
 .password {
     position: absolute;
@@ -98,66 +99,183 @@ body {
     color: #787878;
 }
 
-.inPut::placeholder {color: #a29191;} 
+
 
 
 [placeholder="Введите пароль"] {
-    margin-top: 2px;
-    margin-left: 6px;
-    width: 100%;
+    border: none;
+    margin-left: 3px;
+    width: calc(100% - 6px);
     height: 100%;
 
 }
 
- .checkboxSection {
+
+[placeholder="Введите логин"] {
+    border: none;
+    margin-left: 3px;
+    width: calc(100% - 6px);
+    height: 100%;
+
+}
+.checkboxSection {
     position: absolute;
     display: flex;
     height: calc(24/1440 * 100vw);
     margin-top: calc(258/1440 * 100vw);
     margin-left: calc(45/1440 * 100vw); 
- }
+}
 
- #checkboxFromEntryForm {
+#checkboxFromEntryForm {
     margin-top: 0;
     margin-left: 0;
     width: calc(24/1440 * 100vw);
     height: calc(24/1440 * 100vw);
     border-radius: 56px;
     background: #FFFFFF;
-    border: 2px solid #787878;
+    border: 4px solid #787878;
 
     
- }
- 
- .placeholderStyle {
+}
+
+.placeholderStyle {
+    
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 400px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
- }
+}
 
- .goIn {
+.goIn {
     position: absolute;
     margin-top: calc(334/1440 * 100vw);
     margin-left: calc(210/1440 * 100vw);
     padding: calc(18/1440 * 100vw) calc(55/1440 * 100vw) calc(18/1440 * 100vw)  calc(55/1440 * 100vw);
     border-radius: 10px;
     background: #1A226B;
-    /* width: 69px;
-    height: 16px;
-    left: 55px;
-    top: 18px; */
-
+    width: calc(180/1440 * 100vw);
+    height: calc(52/1440 * 100vw);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: calc(24/1440 * 100vw);
     line-height: calc(16/1440 * 100vw);
-    /* identical to box height, or 67% */
+    
+    color: #FFFFFF;
+}
 
 
-color: #FFFFFF;
- }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+   
+    .autorizationForm {    
+        width: calc(728/768 * 100vw);
+        height: calc(697/768 * 100vw);
+        margin-left: calc(20/768 * 100vw);
+        margin-top: calc(20/768 * 100vw);
+   
+    }
+
+    .entry {
+        
+        width: calc(138/768 * 100vw);
+        height: calc(50/768 * 100vw);
+        margin-top: calc(38/768 * 100vw);
+        margin-left: calc(288/768 * 100vw);
+        font-size: calc(60/768 * 100vw);
+        line-height: calc(50/768 * 100vw);
+    }
+
+    .email {
+        width: calc(60/768 * 100vw);
+        height: calc(16/768 * 100vw);
+        margin-left: calc(53/768 * 100vw);
+        margin-top: calc(101/768 * 100vw);
+        font-size: calc(16/768 * 100vw);
+        line-height: calc(16/768 * 100vw);
+    } 
+
+    .login {
+        width: calc(638/768 * 100vw);
+        height: calc(75/768 * 100vw);
+        margin-top: calc(125/768 * 100vw);
+        margin-left: calc(45/768 * 100vw);
+        margin-right: calc(45/768 * 100vw);
+        font-size: calc(28/768 * 100vw);
+        line-height: calc(36/768 * 100vw);   
+    }
+    /* .enterData {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 36px;
+        or 129% 
+
+
+        color: #787878
+    } */
+
+    .password {
+        width: calc(638/768 * 100vw);
+        height: calc(75/768 * 100vw);
+        margin-top: calc(211/768 * 100vw);
+        margin-left: calc(45/768 * 100vw);
+        margin-right: calc(45/768 * 100vw);
+        font-size: calc(28/768 * 100vw);
+        line-height: calc(36/768 * 100vw);
+    }
+
+    
+
+/* 
+    [placeholder="Введите пароль"] {
+        border: none;
+        margin-left: 3px;
+        width: calc(100% - 6px);
+        height: 100%;
+
+    }
+
+
+    [placeholder="Введите логин"] {
+        border: none;
+        margin-left: 3px;
+        width: calc(100% - 6px);
+        height: 100%;
+
+    } */
+    .checkboxSection {
+        height: calc(24/768 * 100vw);
+        margin-top: calc(300/768 * 100vw);
+        margin-left: calc(45/768 * 100vw); 
+    }
+
+    #checkboxFromEntryForm {
+        width: calc(32/768 * 100vw);
+        height: calc(32/768 * 100vw); 
+    }
+    
+    .placeholderStyle {
+        font-size: calc(18px/768 * 100vw);
+        line-height: calc(16/768 * 100vw);
+    }
+
+    .goIn {
+        margin-top: calc(375/768 * 100vw);
+        margin-left: calc(254/768 * 100vw);
+        padding: calc(32/768 * 100vw) calc(64/768 * 100vw)  calc(32/768 * 100vw) calc(64/768 * 100vw) ;
+        border-radius: 10px;
+        width: calc(220/768 * 100vw);
+        height: calc(80/768 * 10vw);
+        /* left: 55px;
+        top: 18px; */
+        font-size: calc(32/768 * 100vw);
+        line-height: calc(10/768 * 100vw);
+       
+    }
+
+}
